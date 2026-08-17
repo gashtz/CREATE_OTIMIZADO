@@ -1,0 +1,2288 @@
+[STDOUT]   <log4j:Event logger="FabricLoader/GameProvider" timestamp="1786985800486" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Loading Minecraft 1.20.1 with Fabric Loader 0.16.0]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricLoader/Metadata" timestamp="1786985801033" level="WARN" thread="ForkJoinPool-1-worker-8">
+    <log4j:Message><![CDATA[Mod creategoggles uses the version 0.5.5.g which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'g'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricLoader/Metadata" timestamp="1786985801038" level="WARN" thread="ForkJoinPool-1-worker-8">
+    <log4j:Message><![CDATA[Mod mr_dungeons_andtaverns uses the version 3.0.3.f which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'f'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricLoader/Resolution" timestamp="1786985802582" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Warnings were found!
+ - Mod 'Concurrent Chunk Management Engine' (c2me) 0.2.0+alpha.11.18 conflicts with any version of mod 'Better chunk loading mod' (betterchunkloading), which is present with the following versions: 1.20.1-4.3!
+	 - While this won't prevent you from starting the game, the developer(s) of mod 'Concurrent Chunk Management Engine' (c2me) have found that this combination may cause issues. You should remove one of the mods or check for updates that resolve the issue.
+ - Mod 'Create Enchantment Industry' (create_enchantment_industry) 1.2.16 recommends version 0.5.1-f-build.1335+mc1.20.1 of mod 'Create' (create), but only the wrong version is present: 0.5.1-f-build.1417+mc1.20.1!
+	 - You should install version 0.5.1-f-build.1335+mc1.20.1 of mod 'Create' (create) for the optimal experience.
+ - Mod 'Debugify' (debugify) 1.20.1+2.0 recommends any 3.x version of yet-another-config-lib, which is missing!
+	 - You should install any 3.x version of yet-another-config-lib for the optimal experience.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricLoader" timestamp="1786985802582" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Loading 261 mods:
+	- ad_astra 1.15.20
+	   \-- javazoom_jlayer 1.0.1
+	- alternate-current 1.7.0
+	- appleskin 2.5.1+mc1.20
+	- aquamirae 6
+	- architectury 9.2.14
+	- badpackets 0.4.3
+	- bclib 3.0.14
+	   \-- wunderlib 1.1.5
+	- betteradvancements 0.4.2.10
+	- betterchunkloading 1.20.1-4.3
+	- botarium 2.3.4
+	   \-- team_reborn_energy 3.0.0
+	- brutalbosses 1.20.1-8.5
+	- c2me 0.2.0+alpha.11.18
+	   |-- c2me-base 0.2.0+alpha.11.18
+	   |-- c2me-client-uncapvd 0.2.0+alpha.11.18
+	   |-- c2me-fixes-chunkio-threading-issues 0.2.0+alpha.11.18
+	   |-- c2me-fixes-general-threading-issues 0.2.0+alpha.11.18
+	   |-- c2me-fixes-worldgen-threading-issues 0.2.0+alpha.11.18
+	   |-- c2me-fixes-worldgen-vanilla-bugs 0.2.0+alpha.11.18
+	   |-- c2me-notickvd 0.2.0+alpha.11.18
+	   |-- c2me-opts-allocs 0.2.0+alpha.11.18
+	   |-- c2me-opts-chunk-access 0.2.0+alpha.11.18
+	   |-- c2me-opts-chunkio 0.2.0+alpha.11.18
+	   |-- c2me-opts-math 0.2.0+alpha.11.18
+	   |-- c2me-opts-scheduling 0.2.0+alpha.11.18
+	   |-- c2me-opts-worldgen-general 0.2.0+alpha.11.18
+	   |-- c2me-opts-worldgen-vanilla 0.2.0+alpha.11.18
+	   |-- c2me-rewrites-chunk-serializer 0.2.0+alpha.11.18
+	   |-- c2me-rewrites-chunkio 0.2.0+alpha.11.18
+	   |-- c2me-server-utils 0.2.0+alpha.11.18
+	   |-- c2me-threading-chunkio 0.2.0+alpha.11.18
+	   |-- c2me-threading-lighting 0.2.0+alpha.11.18
+	   |-- c2me-threading-worldgen 0.2.0+alpha.11.18
+	   |-- com_ibm_async_asyncutil 0.1.0
+	   |-- net_objecthunter_exp4j 0.4.8
+	   \-- org_threadly_threadly 7.0
+	- cardinal-components 5.2.2
+	   |-- cardinal-components-base 5.2.2
+	   |-- cardinal-components-block 5.2.2
+	   |-- cardinal-components-chunk 5.2.2
+	   |-- cardinal-components-entity 5.2.2
+	   |-- cardinal-components-item 5.2.2
+	   |-- cardinal-components-level 5.2.2
+	   |-- cardinal-components-scoreboard 5.2.2
+	   \-- cardinal-components-world 5.2.2
+	- carryon 2.1.2.7
+	- chisel 2.0.0+mc1.20.1
+	- chunksending 1.20.1-2.8
+	- cloth-config 11.1.118
+	   \-- cloth-basic-math 0.6.1
+	- clumps 12.0.0.4
+	- connectivity 1.20.1-5.6
+	- continuity 3.0.0+1.20.1
+	- controlling 12.0.2
+	- create 0.5.1-f-build.1417+mc1.20.1
+	   |-- com_electronwill_night-config_core 3.6.6
+	   |-- com_electronwill_night-config_toml 3.6.6
+	   |-- com_google_code_findbugs_jsr305 3.0.2
+	   |-- flywheel 0.6.10-2
+	   |-- milk 1.2.60
+	   |    \-- dripstone_fluid_lib 3.0.2
+	   |-- porting_lib_brewing 2.3.2+1.20.1
+	   |-- porting_lib_models 2.3.2+1.20.1
+	   |    \-- porting_lib_model_loader 2.3.2+1.20.1
+	   |-- porting_lib_obj_loader 2.3.2+1.20.1
+	   |    \-- porting_lib_model_loader 2.3.2+1.20.1
+	   |-- porting_lib_tags 3.0
+	   |-- reach-entity-attributes 2.4.0
+	   \-- registrate-fabric 1.3.62-MC1.20.1
+	        |-- porting_lib_data 2.1.1090+1.20
+	        |    \-- porting_lib_gametest 2.1.1090+1.20
+	        \-- porting_lib_model_generators 2.1.1090+1.20
+	             |-- porting_lib_gametest 2.1.1090+1.20
+	             \-- porting_lib_model_materials 2.1.1090+1.20
+	- create_enchantment_industry 1.2.16
+	   \-- create_dragon_lib 1.4.2
+	- create_new_age 1.1.2
+	- createaddition 1.2.4
+	- creategoggles 0.5.5.g
+	- cryonicconfig 1.0.0+mc1.20.1
+	- cullleaves 3.2.0
+	   \-- midnightlib 1.4.1
+	- cupboard 1.20.1-2.7
+	- debugify 1.20.1+2.0
+	- decorative_blocks 4.1.3
+	- deepslatecutting 1.7.0
+	- diggusmaximus 1.5.9-1.20
+	   \-- kyrptconfig 1.5.6-1.20
+	- dynamic_fps 3.6.0
+	   \-- net_lostluma_battery 1.0.1
+	- easyanvils 8.0.2
+	- easymagic 8.0.1
+	- entityculling 1.6.6
+	- expandeddelight 0.3.1
+	   \-- omega-config 1.4.0+1.20.1
+	- extendedgears 2.1.1-1.20.1-0.5.1.f-fabric
+	- fabric-api 0.92.2+1.20.1
+	   |-- fabric-api-base 0.4.31+1802ada577
+	   |-- fabric-api-lookup-api-v1 1.6.36+1802ada577
+	   |-- fabric-biome-api-v1 13.0.13+1802ada577
+	   |-- fabric-block-api-v1 1.0.11+1802ada577
+	   |-- fabric-block-view-api-v2 1.0.1+1802ada577
+	   |-- fabric-blockrenderlayer-v1 1.1.41+1802ada577
+	   |-- fabric-client-tags-api-v1 1.1.2+1802ada577
+	   |-- fabric-command-api-v1 1.2.34+f71b366f77
+	   |-- fabric-command-api-v2 2.2.13+1802ada577
+	   |-- fabric-commands-v0 0.2.51+df3654b377
+	   |-- fabric-containers-v0 0.1.64+df3654b377
+	   |-- fabric-content-registries-v0 4.0.11+1802ada577
+	   |-- fabric-convention-tags-v1 1.5.5+1802ada577
+	   |-- fabric-crash-report-info-v1 0.2.19+1802ada577
+	   |-- fabric-data-attachment-api-v1 1.0.0+de0fd6d177
+	   |-- fabric-data-generation-api-v1 12.3.4+1802ada577
+	   |-- fabric-dimensions-v1 2.1.54+1802ada577
+	   |-- fabric-entity-events-v1 1.6.0+1c78457f77
+	   |-- fabric-events-interaction-v0 0.6.2+1802ada577
+	   |-- fabric-events-lifecycle-v0 0.2.63+df3654b377
+	   |-- fabric-game-rule-api-v1 1.0.40+1802ada577
+	   |-- fabric-item-api-v1 2.1.28+1802ada577
+	   |-- fabric-item-group-api-v1 4.0.12+1802ada577
+	   |-- fabric-key-binding-api-v1 1.0.37+1802ada577
+	   |-- fabric-keybindings-v0 0.2.35+df3654b377
+	   |-- fabric-lifecycle-events-v1 2.2.22+1802ada577
+	   |-- fabric-loot-api-v2 1.2.1+1802ada577
+	   |-- fabric-loot-tables-v1 1.1.45+9e7660c677
+	   |-- fabric-message-api-v1 5.1.9+1802ada577
+	   |-- fabric-mining-level-api-v1 2.1.50+1802ada577
+	   |-- fabric-model-loading-api-v1 1.0.3+1802ada577
+	   |-- fabric-models-v0 0.4.2+9386d8a777
+	   |-- fabric-networking-api-v1 1.3.11+1802ada577
+	   |-- fabric-networking-v0 0.3.51+df3654b377
+	   |-- fabric-object-builder-api-v1 11.1.3+1802ada577
+	   |-- fabric-particles-v1 1.1.2+1802ada577
+	   |-- fabric-recipe-api-v1 1.0.21+1802ada577
+	   |-- fabric-registry-sync-v0 2.3.3+1802ada577
+	   |-- fabric-renderer-api-v1 3.2.1+1802ada577
+	   |-- fabric-renderer-indigo 1.5.2+85287f9f77
+	   |-- fabric-renderer-registries-v1 3.2.46+df3654b377
+	   |-- fabric-rendering-data-attachment-v1 0.3.37+92a0d36777
+	   |-- fabric-rendering-fluids-v1 3.0.28+1802ada577
+	   |-- fabric-rendering-v0 1.1.49+df3654b377
+	   |-- fabric-rendering-v1 3.0.8+1802ada577
+	   |-- fabric-resource-conditions-api-v1 2.3.8+1802ada577
+	   |-- fabric-resource-loader-v0 0.11.10+1802ada577
+	   |-- fabric-screen-api-v1 2.0.8+1802ada577
+	   |-- fabric-screen-handler-api-v1 1.3.30+1802ada577
+	   |-- fabric-sound-api-v1 1.0.13+1802ada577
+	   |-- fabric-transfer-api-v1 3.3.5+8dd72ea377
+	   \-- fabric-transitive-access-wideners-v1 4.3.1+1802ada577
+	- fabric-language-kotlin 1.11.0+kotlin.2.0.0
+	   |-- org_jetbrains_kotlin_kotlin-reflect 2.0.0
+	   |-- org_jetbrains_kotlin_kotlin-stdlib 2.0.0
+	   |-- org_jetbrains_kotlin_kotlin-stdlib-jdk7 2.0.0
+	   |-- org_jetbrains_kotlin_kotlin-stdlib-jdk8 2.0.0
+	   |-- org_jetbrains_kotlinx_atomicfu-jvm 0.24.0
+	   |-- org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm 1.8.1
+	   |-- org_jetbrains_kotlinx_kotlinx-coroutines-jdk8 1.8.1
+	   |-- org_jetbrains_kotlinx_kotlinx-datetime-jvm 0.6.0
+	   |-- org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm 1.6.3
+	   |-- org_jetbrains_kotlinx_kotlinx-serialization-core-jvm 1.6.3
+	   \-- org_jetbrains_kotlinx_kotlinx-serialization-json-jvm 1.6.3
+	- fabricloader 0.16.0
+	   \-- mixinextras 0.4.0
+	- fallingleaves 1.15.6
+	- farmersdelight 1.20.1-2.1.1+refabricated
+	   |-- mm 2.3
+	   |-- porting_lib_accessors 2.3.4+1.20.1
+	   |    \-- porting_lib_core 2.3.4+1.20.1
+	   |-- porting_lib_base 2.3.4+1.20.1
+	   |    |-- com_electronwill_night-config_core 3.6.6
+	   |    |-- com_electronwill_night-config_toml 3.6.6
+	   |    |-- porting_lib_attributes 2.3.4+1.20.1
+	   |    |-- porting_lib_common 2.3.4+1.20.1
+	   |    |-- porting_lib_core 2.3.4+1.20.1
+	   |    |-- porting_lib_entity 2.3.4+1.20.1
+	   |    |-- porting_lib_fluids 2.3.4+1.20.1
+	   |    |-- porting_lib_mixin_extensions 2.3.4+1.20.1
+	   |    |-- porting_lib_transfer 2.3.4+1.20.1
+	   |    |-- porting_lib_utility 2.3.4+1.20.1
+	   |    \-- reach-entity-attributes 2.4.0
+	   |-- porting_lib_client_events 2.3.4+1.20.1
+	   |    \-- porting_lib_core 2.3.4+1.20.1
+	   |-- porting_lib_config 2.3.4+1.20.1
+	   |    |-- com_electronwill_night-config_core 3.6.6
+	   |    |-- com_electronwill_night-config_toml 3.6.6
+	   |    \-- porting_lib_core 2.3.4+1.20.1
+	   |-- porting_lib_extensions 2.3.4+1.20.1
+	   |    |-- porting_lib_attributes 2.3.4+1.20.1
+	   |    |-- porting_lib_common 2.3.4+1.20.1
+	   |    |-- porting_lib_core 2.3.4+1.20.1
+	   |    \-- reach-entity-attributes 2.4.0
+	   |-- porting_lib_lazy_registration 2.3.4+1.20.1
+	   |    \-- porting_lib_core 2.3.4+1.20.1
+	   |-- porting_lib_loot 2.3.4+1.20.1
+	   |    \-- porting_lib_core 2.3.4+1.20.1
+	   |-- porting_lib_networking 2.3.4+1.20.1
+	   |    \-- porting_lib_core 2.3.4+1.20.1
+	   |-- porting_lib_recipe_book_categories 2.3.4+1.20.1
+	   |    \-- porting_lib_core 2.3.4+1.20.1
+	   |-- porting_lib_registries 2.3.4+1.20.1
+	   |    \-- porting_lib_core 2.3.4+1.20.1
+	   \-- porting_lib_tool_actions 2.3.4+1.20.1
+	        \-- porting_lib_core 2.3.4+1.20.1
+	- ferritecore 6.0.1
+	- fish_n_ships 1.0.0
+	- forgeconfigapiport 8.0.0
+	- geckolib 4.8.4
+	   \-- com_eliotlash_mclib_mclib 20
+	- gpumemleakfix 1.20.1-1.8
+	- handcrafted 3.0.6
+	- immediatelyfast 1.5.5+1.20.4
+	   \-- net_lenni0451_reflect 1.6.2
+	- indium 1.0.34+mc1.20.1
+	- inventorysorter 1.9.0-1.20
+	   \-- kyrptconfig 1.5.6-1.20
+	- iris 1.7.2+mc1.20.1
+	   |-- fabric-api-base 0.4.31+1802ada577
+	   |-- fabric-key-binding-api-v1 1.0.37+1802ada577
+	   |-- io_github_douira_glsl-transformer 2.0.1
+	   |-- org_anarres_jcpp 1.4.14
+	   \-- org_antlr_antlr4-runtime 4.13.1
+	- java 17
+	- krypton 0.2.3
+	   \-- com_velocitypowered_velocity-native 3.2.0-SNAPSHOT
+	- lazydfu 0.1.3
+	- lithium 0.11.2
+	- lmft 1.1.1+1.21.9
+	- minecraft 1.20.1
+	- miningspeedtooltips 1.0.0
+	- modmenu 7.2.2
+	- mousetweaks 2.26
+	- mr_dungeons_andtaverns 3.0.3.f
+	- obscure_api 16
+	- opaccreatesupport 1.6.0
+	- openpartiesandclaims 0.23.1
+	- patchouli 1.20.1-84-FABRIC
+	   \-- fiber 0.23.0-2
+	- puzzleslib 8.1.33
+	   \-- puzzlesaccessapi 20.1.1
+	- railways 1.6.4+fabric-mc1.20.1
+	   \-- mm 2.3
+	- rare-ice 0.6.0
+	- reeses-sodium-options 1.7.2+mc1.20.1-build.101
+	- resourcefulconfig 2.1.3
+	- resourcefullib 2.1.29
+	   |-- com_teamresourceful_bytecodecs 1.0.2
+	   \-- com_teamresourceful_yabn 1.0.3
+	- roughlyenoughitems 12.1.725
+	   \-- error_notifier 1.0.9
+	- searchables 1.0.3
+	- sliceanddice 3.2.3
+	- smoke_suppression 1.0.16
+	   \-- crowdin-translate 1.4+1.19.3
+	- smoothchunk 1.20.1-3.6
+	- sodium 0.5.11+mc1.20.1
+	   |-- fabric-api-base 0.4.31+1802ada577
+	   |-- fabric-block-view-api-v2 1.0.1+1802ada577
+	   |-- fabric-rendering-data-attachment-v1 0.3.37+92a0d36777
+	   |-- fabric-rendering-fluids-v1 3.0.28+1802ada577
+	   \-- fabric-resource-loader-v0 0.11.10+1802ada577
+	- sodium-extra 0.5.4+mc1.20.1-build.115
+	   |-- caffeineconfig 1.3.0+1.17
+	   \-- crowdin-translate 1.4+1.19.3
+	- spark 1.10.53
+	- starlight 1.1.2+fabric.dbc156f
+	- structureessentials 1.20.1-5.0
+	- thiccpackets 1.17-1.19+
+	- txnilib 1.0.24
+	- usefulbackpacks 2.0.1.122
+	- uteamcore 5.1.4.312
+	- wthit 8.13.2
+	- yet_another_config_lib_v3 3.5.0+1.20.1-fabric
+	   |-- com_twelvemonkeys_common_common-image 3.10.0
+	   |-- com_twelvemonkeys_common_common-io 3.10.0
+	   |-- com_twelvemonkeys_common_common-lang 3.10.0
+	   |-- com_twelvemonkeys_imageio_imageio-core 3.10.0
+	   |-- com_twelvemonkeys_imageio_imageio-metadata 3.10.0
+	   |-- com_twelvemonkeys_imageio_imageio-webp 3.10.0
+	   |-- org_quiltmc_parsers_gson 0.2.1
+	   \-- org_quiltmc_parsers_json 0.2.1
+	- yigd 2.0.0-beta.13
+	   |-- fabric-permissions-api-v0 0.2-SNAPSHOT
+	   \-- libgui 8.1.1+1.20.1
+	        |-- jankson 6.0.0+j1.2.3
+	        |    \-- blue_endless_jankson 1.2.3
+	        \-- libninepatch 1.2.0
+	- yjas 1.0.5+mc1.20
+	- zoomify 2.14.0+1.20.1
+	   \-- com_akuleshov7_ktoml-core-jvm 0.5.1]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricLoader/Mixin" timestamp="1786985805882" level="INFO" thread="main">
+    <log4j:Message><![CDATA[SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/D:/CURSEFORGE/Install/libraries/net/fabricmc/sponge-mixin/0.15.0+mixin.0.8.7/sponge-mixin-0.15.0+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricLoader/Mixin" timestamp="1786985806099" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Compatibility level set to JAVA_17]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807314" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing com.ishland.c2me.base.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Config Updater" timestamp="1786985807465" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Updating config from 0 to 1]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Config Updater" timestamp="1786985807493" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Updating config from 1 to 2]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Config Updater" timestamp="1786985807493" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Updating config from 2 to 3]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807767" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing com.ishland.c2me.client.uncapvd.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807782" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing com.ishland.c2me.fixes.chunkio.threading_issues.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807782" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing com.ishland.c2me.fixes.general.threading_issues.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807791" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing com.ishland.c2me.fixes.worldgen.threading_issues.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807796" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing com.ishland.c2me.fixes.worldgen.vanilla_bugs.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807801" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing com.ishland.c2me.notickvd.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807826" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing com.ishland.c2me.opts.allocs.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807833" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing com.ishland.c2me.opts.chunk_access.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807841" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing com.ishland.c2me.opts.chunkio.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807852" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing com.ishland.c2me.opts.math.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807857" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing com.ishland.c2me.opts.scheduling.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807865" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing com.ishland.c2me.opts.worldgen.general.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807866" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing com.ishland.c2me.opts.worldgen.vanilla.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807866" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing com.ishland.c2me.rewrites.chunk_serializer.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Config System" timestamp="1786985807866" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Disabling config ioSystem.gcFreeChunkSerializer: Incompatible with architectury@9.2.14 (*) (defined in c2me)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807866" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Disabling com.ishland.c2me.rewrites.chunk_serializer.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807866" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing com.ishland.c2me.rewrites.chunkio.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807884" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Disabling com.ishland.c2me.rewrites.chunkio.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807884" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing com.ishland.c2me.server.utils.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807884" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing com.ishland.c2me.threading.chunkio.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807894" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing com.ishland.c2me.threading.lighting.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807899" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing com.ishland.c2me.threading.worldgen.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="C2ME Modules Manager" timestamp="1786985807906" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Disabling com.ishland.c2me.threading.worldgen.mixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Debugify" timestamp="1786985808224" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Preloading Debugify]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Lithium" timestamp="1786985808628" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Loaded configuration file for Lithium: 115 options available, 2 override(s) found]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricLoader/Mixin" timestamp="1786985808786" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Reference map 'puzzlesaccessapi.common.refmap.json' for puzzlesaccessapi.common.mixins.json could not be read. If this is a development environment you can ignore this message]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricLoader/Mixin" timestamp="1786985808787" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Reference map 'puzzlesaccessapi.fabric.refmap.json' for puzzlesaccessapi.fabric.mixins.json could not be read. If this is a development environment you can ignore this message]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Sodium" timestamp="1786985808832" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Loaded configuration file for Sodium: 42 options available, 3 override(s) found]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Sodium Extra Config" timestamp="1786985808868" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Loaded configuration file for Sodium Extra: 34 options available, 0 override(s) found]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricLoader/Mixin" timestamp="1786985810402" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Error loading class: io/vram/frex/base/renderer/context/render/EntityBlockRenderContext (java.lang.ClassNotFoundException: io/vram/frex/base/renderer/context/render/EntityBlockRenderContext)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricLoader/Mixin" timestamp="1786985810403" level="WARN" thread="main">
+    <log4j:Message><![CDATA[@Mixin target io.vram.frex.base.renderer.context.render.EntityBlockRenderContext was not found porting_lib_base.mixins.json:client.frex.EntityBlockRenderContextMixin from mod porting_lib_base]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricLoader/Mixin" timestamp="1786985811382" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Error loading class: net/caffeinemc/sodium/config/user/UserConfigCategories (java.lang.ClassNotFoundException: net/caffeinemc/sodium/config/user/UserConfigCategories)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Debugify" timestamp="1786985812121" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Force disabled MC-121772 because it only applies to OS: MAC]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Debugify" timestamp="1786985812121" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Force disabled MC-122477 because it only applies to OS: LINUX]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Debugify" timestamp="1786985812125" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Force disabled MC-176559 because it's conflicting with: fabric-api]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Debugify" timestamp="1786985812128" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Force disabled MC-22882 because it only applies to OS: MAC]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Lithium" timestamp="1786985813645" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Force-disabling mixin 'alloc.blockstate.StateMixin' as rule 'mixin.alloc.blockstate' (added by mods [ferritecore]) disables it and children]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Lithium" timestamp="1786985813704" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Force-disabling mixin 'world.player_chunk_tick.ThreadedAnvilChunkStorageMixin' as rule 'mixin.world.player_chunk_tick' (added by mods [c2me, krypton]) disables it and children]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricLoader/Mixin" timestamp="1786985814013" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Error loading class: net/minecraft/class_3494$class_3495 (java.lang.ClassNotFoundException: net/minecraft/class_3494$class_3495)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricLoader/Mixin" timestamp="1786985814951" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Error loading class: dev/latvian/mods/kubejs/recipe/RecipesEventJS (java.lang.ClassNotFoundException: dev/latvian/mods/kubejs/recipe/RecipesEventJS)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricLoader/Mixin" timestamp="1786985814951" level="WARN" thread="main">
+    <log4j:Message><![CDATA[@Mixin target dev.latvian.mods.kubejs.recipe.RecipesEventJS was not found sliceanddice.mixins.json:RecipeEventJSMixin from mod sliceanddice]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Sodium" timestamp="1786985814955" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Force-disabling mixin 'features.render.entity.CuboidMixin' as rule 'mixin.features.render.entity' (added by mods [iris]) disables it and children]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Sodium" timestamp="1786985814955" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Force-disabling mixin 'features.render.entity.ModelPartMixin' as rule 'mixin.features.render.entity' (added by mods [iris]) disables it and children]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Sodium" timestamp="1786985814955" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Force-disabling mixin 'features.render.entity.cull.EntityRendererMixin' as rule 'mixin.features.render.entity' (added by mods [iris]) disables it and children]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Sodium" timestamp="1786985814955" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Force-disabling mixin 'features.render.entity.shadows.EntityRenderDispatcherMixin' as rule 'mixin.features.render.entity' (added by mods [iris]) disables it and children]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Sodium" timestamp="1786985814966" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Force-disabling mixin 'features.render.gui.font.GlyphRendererMixin' as rule 'mixin.features.render.gui.font' (added by mods [iris]) disables it and children]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Sodium" timestamp="1786985814970" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Force-disabling mixin 'features.render.world.sky.BackgroundRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Sodium" timestamp="1786985814971" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Force-disabling mixin 'features.render.world.sky.ClientWorldMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Sodium" timestamp="1786985814971" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Force-disabling mixin 'features.render.world.sky.WorldRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.cupboard.Cupboard" timestamp="1786985815189" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Loaded config for: structureessentials.json]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricLoader/Mixin" timestamp="1786985815274" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Error loading class: com/beansgalaxy/backpacks/compat/TrinketsRegistry$1 (java.lang.ClassNotFoundException: com/beansgalaxy/backpacks/compat/TrinketsRegistry$1)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricLoader/Mixin" timestamp="1786985815275" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Error loading class: com/tiviacz/travelersbackpack/compat/trinkets/TravelersBackpackTrinket (java.lang.ClassNotFoundException: com/tiviacz/travelersbackpack/compat/trinkets/TravelersBackpackTrinket)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricLoader/Mixin" timestamp="1786985815784" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Error loading class: net/caffeinemc/sodium/config/user/UserConfigCategories (java.lang.ClassNotFoundException: net/caffeinemc/sodium/config/user/UserConfigCategories)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricLoader/Mixin" timestamp="1786985815786" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Error loading class: net/caffeinemc/sodium/config/user/UserConfigCategories (java.lang.ClassNotFoundException: net/caffeinemc/sodium/config/user/UserConfigCategories)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricLoader/Mixin" timestamp="1786985817161" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Error loading class: org/jetbrains/annotations/ApiStatus$Internal (java.lang.ClassNotFoundException: org/jetbrains/annotations/ApiStatus$Internal)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Sodium-GraphicsAdapterProbe" timestamp="1786985818782" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Searching for graphics cards...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Sodium-GraphicsAdapterProbe" timestamp="1786985819649" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found graphics adapter: AdapterInfo{vendor=NVIDIA, description='GeForce GT 640', adapterType=0x00000303, openglIcdFilePath='C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_1c83a5d7cffd7bff\nvoglv64.dll', openglIcdVersion=27.21.14.5671}]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Sodium-GraphicsAdapterProbe" timestamp="1786985819649" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found graphics adapter: AdapterInfo{vendor=INTEL, description='Intel(R) HD Graphics 4000', adapterType=0x0000000B, openglIcdFilePath='ig7icd64.dll', openglIcdVersion=10.18.10.5161}]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Sodium-Workarounds" timestamp="1786985819666" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Sodium has applied one or more workarounds to prevent crashes or other issues on your system: [NVIDIA_THREADED_OPTIMIZATIONS]]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Sodium-Workarounds" timestamp="1786985819666" level="WARN" thread="main">
+    <log4j:Message><![CDATA[This is not necessarily an issue, but it may result in certain features or optimizations being disabled. You can sometimes fix these issues by upgrading your graphics driver.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricLoader/MixinExtras|Service" timestamp="1786985819666" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.0).]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT] Completely ignored arguments: [, , ]
+
+[STDOUT]   <log4j:Event logger="FabricLoader/Mixin" timestamp="1786985825347" level="WARN" thread="main">
+    <log4j:Message><![CDATA[@Inject(@At("INVOKE")) Shift.BY=2 on porting_lib_entity.mixins.json:common.LivingEntityMixin from mod porting_lib_entity::handler$enp000$porting_lib_entity$port_lib$onFinishUsing exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricLoader/Mixin" timestamp="1786985826663" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Method overwrite conflict for getEntityManager in spark.mixins.json:ClientWorldAccessor from mod spark, previously written by me.jellysquid.mods.lithium.mixin.chunk.entity_class_groups.ClientWorldMixin. Skipping method.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService" timestamp="1786985844592" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD']]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_310" timestamp="1786985846605" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Setting user: JONSZIN]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985849281" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for tier_1_rover]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985849287" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for tier_1_rocket]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985849287" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for tier_2_rocket]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985849288" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for tier_3_rocket]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985849288" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for tier_4_rocket]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985849290" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for lander]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985849292" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for lunarian]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985849297" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for corrupted_lunarian]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985849301" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for star_crawler]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985849304" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for martian_raptor]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985849307" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for pygro]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985849309" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for zombified_pygro]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985849311" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for pygro_brute]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985849314" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for mogler]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985849318" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for zombified_mogler]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985849322" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for lunarian_wandering_trader]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985849325" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for sulfur_creeper]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985849330" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for glacian_ram]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985849333" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for ice_spit]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985850564" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Added Config bclib.generator to auto sync (file hash)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985850568" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Added Config bclib.main to auto sync (content diff)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985850573" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Added Config bclib.biomes to auto sync (file hash)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.betterchunkloading.BetterChunkLoading" timestamp="1786985850990" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[betterchunkloading mod initialized]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="brutalbosses" timestamp="1786985851076" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Brutal bosses initialized]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.cupboard.Cupboard" timestamp="1786985851453" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded config for: chunksending.json]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.chunksending.ChunkSending" timestamp="1786985851453" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[chunksending mod initialized]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.connectivity.Connectivity" timestamp="1786985851464" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Connectivity initialized]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="plus.dragons.createdragonlib.DragonLib" timestamp="1786985857868" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Create: Dragon Lib Create Dragon Lib has initialized, ready to support your Create add-ons!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="plus.dragons.createenchantmentindustry.EnchantmentIndustry" timestamp="1786985857989" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[CEI: hyper_experience_orb got converted to hyper_experience_orb]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="plus.dragons.createenchantmentindustry.EnchantmentIndustry" timestamp="1786985857991" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[CEI: hyper_experience_bottle got converted to hyper_experience_bottle]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="create_new_age" timestamp="1786985858095" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Hello 1.20.1 Create!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858278" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Configuration file D:\CURSEFORGE\Instances\Create Optimized [FABRIC]\config\create_new_age-client.toml is not correct. Correcting]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858279" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key wireSectionsPerMeter was corrected from null to its default, 10. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858280" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key wireThickness was corrected from null to its default, 0.03. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858290" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Configuration file D:\CURSEFORGE\Instances\Create Optimized [FABRIC]\config\create_new_age-common.toml is not correct. Correcting]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858291" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key suToEnergy was corrected from null to its default, 0.029296875. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858292" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key maxCoils was corrected from null to its default, 8. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858293" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key maxRodsInDirection was corrected from null to its default, 32. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858295" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key conductivityMultiplier was corrected from null to its default, 1.0. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858296" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key maxPathfindingDepth was corrected from null to its default, 32. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858298" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key energiserSpeedMultiplier was corrected from null to its default, 1.0. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858300" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key overheatingMultiplier was corrected from null to its default, 1.0. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858301" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key passiveHeatSourceMultiplier was corrected from null to its default, 1.0. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858303" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key passivePipeHeatLoss was corrected from null to its default, 1.0. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858304" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key boilerRequiredHeatMultiplier was corrected from null to its default, 1.0. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858305" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key ReactorRodHeat was corrected from null to its default, 30.0. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858307" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key ReactorRodHeatLoss was corrected from null to its default, 25.0. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858308" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key solarPanelHeatMultiplier was corrected from null to its default, 1.0. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858310" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key maxWireLength was corrected from null to its default, 16. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858312" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key Motors was corrected from null to its default, SimpleCommentedConfig:{}. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858312" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key Motors.motorSuMultiplier was corrected from null to its default, 1.0. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858312" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key Motors.basicMotorCapacity was corrected from null to its default, 16000. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858312" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key Motors.advancedMotorCapacity was corrected from null to its default, 64000. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858312" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key Motors.reinforcedMotorCapacity was corrected from null to its default, 128000. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858312" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key Motors.basicMotorSpeed was corrected from null to its default, 128.0. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858313" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key Motors.advancedMotorSpeed was corrected from null to its default, 256.0. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858313" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key Motors.reinforcedMotorSpeed was corrected from null to its default, 256.0. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858313" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key Motors.basicMotorStress was corrected from null to its default, 512.0. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858313" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key Motors.advancedMotorStress was corrected from null to its default, 2048.0. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858313" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key Motors.reinforcedMotorStress was corrected from null to its default, 8192.0. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858315" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key Motor Extensions was corrected from null to its default, SimpleCommentedConfig:{}. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858316" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key Motor Extensions.basicMotorExtensionMultiplier was corrected from null to its default, 2.0. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858316" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key Motor Extensions.advancedMotorExtensionMultiplier was corrected from null to its default, 8.0. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858316" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key Motor Extensions.basicMotorExtensionExtraCapacity was corrected from null to its default, 64000. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858316" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key Motor Extensions.advancedMotorExtensionExtraCapacity was corrected from null to its default, 256000. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858317" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key Motor Extensions.basicMotorExtensionScrollStep was corrected from null to its default, 1. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Forge Config API Port" timestamp="1786985858317" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Incorrect key Motor Extensions.advancedMotorExtensionScrollStep was corrected from null to its default, 8. ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.fabricmc.fabric.impl.content.registry.FuelRegistryImpl" timestamp="1786985858591" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Tried to register an overly high cookTime: 57600 > 32767! (air)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_2983" timestamp="1786985858618" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[STDOUT]: Create Crafts & Additions Initialized!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="creategoggles" timestamp="1786985858622" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[CreateGoggles init]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="creategoggles" timestamp="1786985858623" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[cgblocks]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="creategoggles" timestamp="1786985858626" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[cgitems]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="creategoggles" timestamp="1786985858647" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[cgblockentities]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="creategoggles" timestamp="1786985858651" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[ResourceKey[minecraft:trim_pattern / creategoggles:goggle]]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="creategoggles" timestamp="1786985858651" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[ResourceKey[minecraft:trim_material / creategoggles:goggle_material]]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="creategoggles" timestamp="1786985858651" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[ResourceKey[minecraft:root / minecraft:trim_pattern]]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="creategoggles" timestamp="1786985858662" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[CGItemModifiers register false]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.fabric.NetworkManagerImpl" timestamp="1786985858679" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering S2C receiver with id creategoggles:sync_goggles]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="creategoggles" timestamp="1786985858720" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[CreateGogglesFabric init]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.cupboard.Cupboard" timestamp="1786985858780" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded config for: cupboard.json]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Debugify" timestamp="1786985858800" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Enabled 66 bug fixes: [MC-577, MC-2025, MC-4490, MC-7569, MC-8187, MC-12829, MC-14923, MC-22882, MC-30391, MC-31819, MC-46766, MC-55347, MC-69216, MC-72151, MC-79545, MC-80859, MC-88371, MC-89146, MC-90084, MC-90683, MC-93018, MC-93384, MC-100991, MC-108948, MC-111516, MC-112730, MC-116379, MC-119417, MC-119754, MC-121706, MC-121772, MC-121903, MC-122477, MC-122627, MC-123739, MC-124117, MC-127970, MC-129909, MC-132878, MC-135971, MC-140646, MC-143474, MC-155509, MC-159163, MC-160095, MC-165381, MC-176559, MC-179072, MC-183776, MC-183990, MC-193343, MC-197260, MC-199467, MC-200418, MC-206922, MC-215530, MC-215531, MC-217716, MC-223153, MC-224729, MC-227169, MC-231097, MC-231743, MC-232869, MC-237493, MC-263865]]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Debugify" timestamp="1786985858800" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Successfully Debugify'd your game!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985858843" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for decorative_blocks:dummy]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Puzzles Lib" timestamp="1786985859257" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Constructing common components for easyanvils:main]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Puzzles Lib" timestamp="1786985859302" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loading client config for easyanvils]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Puzzles Lib" timestamp="1786985859472" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Constructing common components for easymagic:main]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Puzzles Lib" timestamp="1786985859501" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loading client config for easymagic]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985859952" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for rotten_tomato]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Fish N' Ships" timestamp="1786985861354" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Initializing Fish N' Ships]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985861382" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for ship]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985861390" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for boat_with_chest]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985861393" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for sailboat]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985861396" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for sailboat_with_chest]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985861400" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for canoe]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985861403" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for canoe_with_chest]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985861407" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for canoe_with_double_chest]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985861412" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for raft]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985861417" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for supply_raft]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_156" timestamp="1786985861936" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[No data fixer registered for handcrafted]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="me.steinborn.krypton.mod.shared.KryptonSharedInitializer" timestamp="1786985862149" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Compression will use Java, encryption will use Java]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.chocohead.mm.MM" timestamp="1786985862158" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Definitely not up to no good]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="xaero.pac.extension.fabric.create.CreateSupport" timestamp="1786985862180" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Open Parties and Claims: Create mod support!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Puzzles Lib" timestamp="1786985862560" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Constructing common components for puzzleslib:main]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Railways" timestamp="1786985863071" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registered bogey styles from railways]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Railways" timestamp="1786985863278" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering data fixers]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.mojang.datafixers.DataFixerBuilder" timestamp="1786985863298" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[0 Datafixer optimizations took 0 milliseconds]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Railways" timestamp="1786985863322" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering tracks for Hex Casting]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Railways" timestamp="1786985863324" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering tracks for Oh The Biomes You'll Go]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Railways" timestamp="1786985863326" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering tracks for Blue Skies]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Railways" timestamp="1786985863328" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering tracks for Twilight Forest]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Railways" timestamp="1786985863330" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering tracks for Biomes O' Plenty]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Railways" timestamp="1786985863332" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering tracks for Nature's Spirit]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Railways" timestamp="1786985863334" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering tracks for Dreams and Desires]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Railways" timestamp="1786985863335" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering tracks for Quark]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Railways" timestamp="1786985863336" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering tracks for TerraFirmaCraft]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985864284" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Config loaded]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.fabric.NetworkManagerImpl" timestamp="1786985864494" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering S2C receiver with id roughlyenoughitems:request_tags_s2c]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.fabric.NetworkManagerImpl" timestamp="1786985864516" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering C2S receiver with id roughlyenoughitems:request_tags_c2s]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985864518" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider DefaultPlugin [roughlyenoughitems] for REIPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985864522" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider DefaultRuntimePlugin [roughlyenoughitems] for REIPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985864525" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider AdAstraReiPlugin [ad_astra] for REIPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985864527" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider REITooltipPlugin [appleskin] for REIPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985864530" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider ChiselREI [chisel] for REIPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985864547" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider create:rei_plugin [create] for REIPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985864549" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider NewAgeReiPlugin [create_new_age] for REIPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985864551" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider CreateAdditionREI [createaddition] for REIPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985864553" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider ExpandedDelightREI [expandeddelight] for REIPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985864554" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider ClientREIPlugin [farmersdelight] for REIPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985864573" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider DefaultClientPlugin [roughlyenoughitems] for REIPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985864610" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider DefaultClientRuntimePlugin [roughlyenoughitems] for REIPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985864614" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider HideIngredientsFromTagsPlugin [roughlyenoughitems] for REIPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985864616" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider REICompat [sliceanddice] for REIPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985864619" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider ReiRecipeAction [wthit] for REIPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985864619" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider DefaultPlugin [roughlyenoughitems] for REIServerPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985864619" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider DefaultRuntimePlugin [roughlyenoughitems] for REIServerPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985864622" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider FabricFluidAPISupportPlugin for REIServerPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985864623" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider FabricFluidAPISupportPlugin for REIPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.fabric.NetworkManagerImpl" timestamp="1786985864630" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering C2S receiver with id roughlyenoughitems:delete_item]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.fabric.NetworkManagerImpl" timestamp="1786985864631" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering C2S receiver with id roughlyenoughitems:create_item]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.fabric.NetworkManagerImpl" timestamp="1786985864632" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering C2S receiver with id roughlyenoughitems:create_item_grab]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.fabric.NetworkManagerImpl" timestamp="1786985864633" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering C2S receiver with id roughlyenoughitems:create_item_hotbar]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.fabric.NetworkManagerImpl" timestamp="1786985864633" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering C2S receiver with id roughlyenoughitems:move_items]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.fabric.NetworkManagerImpl" timestamp="1786985864633" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering C2S receiver with id roughlyenoughitems:move_items_new]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.structureessentials.StructureEssentials" timestamp="1786985864707" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[structureessentials mod initialized]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_2983" timestamp="1786985864708" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[STDOUT]: TxniLib onInitialize!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="info.u_team.u_team_core.internal.shade.net.minecraftforge.fml.VersionChecker" timestamp="1786985865152" level="INFO" thread="Version Check">
+    <log4j:Message><![CDATA[[usefulbackpacks] Starting version check at https://api.u-team.info/update/usefulbackpacks_fabric.json]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mcp.mobius.waila.plugin.PluginLoader" timestamp="1786985865346" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[WTHIT] Initializing plugin waila:core at mcp.mobius.waila.plugin.core.WailaPluginCore]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mcp.mobius.waila.plugin.PluginLoader" timestamp="1786985865393" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[WTHIT] Initializing plugin waila:vanilla at mcp.mobius.waila.plugin.vanilla.WailaPluginVanilla]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mcp.mobius.waila.plugin.PluginLoader" timestamp="1786985865494" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[WTHIT] Initializing plugin waila:harvest at mcp.mobius.waila.plugin.harvest.WailaPluginHarvest]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mcp.mobius.waila.plugin.PluginLoader" timestamp="1786985865510" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[WTHIT] Initializing plugin waila:fabric at mcp.mobius.waila.plugin.fabric.WailaPluginFabric]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mcp.mobius.waila.plugin.PluginLoader" timestamp="1786985865519" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[WTHIT] Initializing plugin waila:team_reborn_energy at mcp.mobius.waila.plugin.trenergy.WailaPluginTeamRebornEnergy]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mcp.mobius.waila.plugin.PluginLoader" timestamp="1786985865523" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[WTHIT] Skipping disabled plugin waila:test]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mcp.mobius.waila.plugin.PluginLoader" timestamp="1786985865568" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[WTHIT] Initializing plugin waila:extra at mcp.mobius.waila.plugin.extra.WailaPluginExtra]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="info.u_team.u_team_core.internal.shade.net.minecraftforge.fml.VersionChecker" timestamp="1786985865635" level="INFO" thread="Version Check">
+    <log4j:Message><![CDATA[[usefulbackpacks] Found status: OUTDATED Current: 2.0.1.122 Target: 2.0.1.124]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="info.u_team.u_team_core.internal.shade.net.minecraftforge.fml.VersionChecker" timestamp="1786985865636" level="INFO" thread="Version Check">
+    <log4j:Message><![CDATA[[uteamcore] Starting version check at https://api.u-team.info/update/uteamcore_fabric.json]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="info.u_team.u_team_core.internal.shade.net.minecraftforge.fml.VersionChecker" timestamp="1786985865667" level="INFO" thread="Version Check">
+    <log4j:Message><![CDATA[[uteamcore] Found status: OUTDATED Current: 5.1.4.312 Target: 5.1.4.382]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mcp.mobius.waila.config.PluginConfig" timestamp="1786985865726" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[WTHIT] Plugin config reloaded]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="yjas" timestamp="1786985865869" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[We add silver to your game!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.fabric.NetworkManagerImpl" timestamp="1786985866316" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering S2C receiver with id architectury:spawn_entity_packet]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985866444" level="INFO" thread="Thread-3">
+    <log4j:Message><![CDATA[[bclib] Received Version Info for minecraft=1.20.1, loader=fabric]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985866445" level="INFO" thread="Thread-3">
+    <log4j:Message><![CDATA[[bclib]  - bclib:3.0.14]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="betteradvancements" timestamp="1786985866492" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="betteradvancements" timestamp="1786985866496" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[java.io.FileNotFoundException: D:\CURSEFORGE\Instances\Create Optimized [FABRIC]\config\betteradvancements.json (O sistema não pode encontrar o arquivo especificado)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="creategoggles" timestamp="1786985867406" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[CreateGogglesFabricClient init]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Debugify" timestamp="1786985867450" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loading Description Cache]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dynamic_fps" timestamp="1786985867510" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Dynamic FPS config corrupted! Starting with defaults ...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dynamic_fps" timestamp="1786985867519" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Dynamic FPS 3.6.0 active on Fabric!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Puzzles Lib" timestamp="1786985867523" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Constructing client components for easyanvils:main]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Puzzles Lib" timestamp="1786985867914" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Constructing client components for easymagic:main]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.fabricmc.fabric.impl.client.indigo.Indigo" timestamp="1786985868212" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[Indigo] Different rendering plugin detected; not applying Indigo.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.jozufozu.flywheel.backend.Backend" timestamp="1786985868506" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Iris detected.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="me.steinborn.krypton.mod.server.KryptonServerInitializer" timestamp="1786985868665" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Krypton is now accelerating your Minecraft client's networking stack 🚀]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="me.steinborn.krypton.mod.server.KryptonServerInitializer" timestamp="1786985868666" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Note that Krypton is most effective on servers, not the client.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985868910" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Checking mod updates...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_2983" timestamp="1786985868924" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[STDOUT]: [Mouse Tweaks] Main.initialize()]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_2983" timestamp="1786985868929" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[STDOUT]: [Mouse Tweaks] Initialized.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="xaero.pac.OpenPartiesAndClaims" timestamp="1786985868992" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loading Open Parties and Claims!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Puzzles Lib" timestamp="1786985869605" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Constructing client components for puzzleslib:main]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985869715" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider AdAstraReiPlugin [ad_astra] for REIClientPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985869716" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider REITooltipPlugin [appleskin] for REIClientPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985869716" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider ChiselREI [chisel] for REIClientPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985869716" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider create:rei_plugin [create] for REIClientPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985869716" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider NewAgeReiPlugin [create_new_age] for REIClientPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985869716" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider CreateAdditionREI [createaddition] for REIClientPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985869716" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider ExpandedDelightREI [expandeddelight] for REIClientPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985869717" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider ClientREIPlugin [farmersdelight] for REIClientPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985869717" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider DefaultClientPlugin [roughlyenoughitems] for REIClientPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985869717" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider DefaultClientRuntimePlugin [roughlyenoughitems] for REIClientPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985869717" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider HideIngredientsFromTagsPlugin [roughlyenoughitems] for REIClientPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985869717" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider REICompat [sliceanddice] for REIClientPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="REI" timestamp="1786985869717" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[REI] Registered plugin provider ReiRecipeAction [wthit] for REIClientPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.fabric.NetworkManagerImpl" timestamp="1786985869719" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering S2C receiver with id roughlyenoughitems:ci_msg]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.fabric.NetworkManagerImpl" timestamp="1786985869719" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Registering S2C receiver with id roughlyenoughitems:og_not_enough]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="YetAnotherConfigLib" timestamp="1786985870372" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Deserializing YACLConfig from 'D:\CURSEFORGE\Instances\Create Optimized [FABRIC]\config\yacl.json5']]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Iris" timestamp="1786985870889" level="WARN" thread="ForkJoinPool.commonPool-worker-1">
+    <log4j:Message><![CDATA[[Iris Update Check] Cached update file detected, using that!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_310" timestamp="1786985871071" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Backend library: LWJGL version 3.3.1 SNAPSHOT]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Sodium-NvidiaWorkarounds" timestamp="1786985871267" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Applying workaround: Prevent the NVIDIA OpenGL driver from using broken optimizations (NVIDIA_THREADED_OPTIMIZATIONS)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="ImmediatelyFast" timestamp="1786985871911" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Initializing ImmediatelyFast 1.5.5+1.20.4 on GeForce GT 640/PCIe/SSE2 (NVIDIA Corporation) with OpenGL 3.2.0 NVIDIA 456.71]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="ImmediatelyFast" timestamp="1786985871911" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Found Iris/Oculus 1.7.2+mc1.20.1. Enabling compatibility.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872194" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'railways@1.6.4+fabric-mc1.20.1', (-> 1.7.2+fabric-mc1.20.1)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872197" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'betteradvancements@0.4.2.10', (-> 0.6.0.73)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872197" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'wthit@8.13.2', (-> fabric-8.21.1)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872197" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'uteamcore@5.1.4.312', (-> 5.1.4.382)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872198" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'sodium@0.5.11+mc1.20.1', (-> mc1.20.1-0.5.13-fabric)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872198" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'zoomify@2.14.0+1.20.1', (-> 2.15.2+1.20.1)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872198" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'iris@1.7.2+mc1.20.1', (-> 1.7.6+1.20.1)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872199" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'fabric-language-kotlin@1.11.0+kotlin.2.0.0', (-> 1.13.13+kotlin.2.4.10)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872199" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'roughlyenoughitems@12.1.725', (-> 12.1.785+fabric)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872199" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'opaccreatesupport@1.6.0', (-> mc1.20-1.7.0)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872199" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'cullleaves@3.2.0', (-> 4.1.1+1.20.1-fabric)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872199" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'sodium-extra@0.5.4+mc1.20.1-build.115', (-> mc1.20.1-0.5.9)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872200" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'expandeddelight@0.3.1', (-> 0.3.2-fabric)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872200" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'appleskin@2.5.1+mc1.20', (-> 2.5.2+mc1.20.1)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872200" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'patchouli@1.20.1-84-FABRIC', (-> 1.20.1-85-fabric)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872200" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'lithium@0.11.2', (-> mc1.20.1-0.11.4-fabric)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872200" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'alternate-current@1.7.0', (-> mc1.20-1.9.0)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872200" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'indium@1.0.34+mc1.20.1', (-> 1.0.36+mc1.20.1)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872201" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'openpartiesandclaims@0.23.1', (-> fabric-1.20.1-0.29.2)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872201" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'fabric-api@0.92.2+1.20.1', (-> 0.92.11+1.20.1)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872201" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'yet_another_config_lib_v3@3.5.0+1.20.1-fabric', (-> 3.6.6+1.20.1-fabric)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872201" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'entityculling@1.6.6', (-> 1.10.5)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872201" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'create@0.5.1-f-build.1417+mc1.20.1', (-> 6.0.8.1+build.1744-mc1.20.1)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872201" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'cardinal-components@5.2.2', (-> 5.2.3)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872202" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'creategoggles@0.5.5.g', (-> 6.1.1)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872202" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'createaddition@1.2.4', (-> fabric-1.20.1-1.3.4)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872202" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'dynamic_fps@3.6.0', (-> 3.11.4)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872202" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'farmersdelight@1.20.1-2.1.1+refabricated', (-> 1.20.1-2.5.5)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872202" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'aquamirae@6', (-> 7.1.11)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872202" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'cloth-config@11.1.118', (-> 11.1.136+fabric)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872202" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'yigd@2.0.0-beta.13', (-> 2.0.16)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872202" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'sliceanddice@3.2.3', (-> 3.6.0)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872203" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'create_new_age@1.1.2', (-> 1.2.0+mc1.20.1)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="Mod Menu/Update Checker" timestamp="1786985872203" level="INFO" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Update available for 'forgeconfigapiport@8.0.0', (-> v8.0.3-1.20.1-Fabric)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Iris" timestamp="1786985872439" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Debug functionality is disabled.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Iris" timestamp="1786985872447" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[ARB_direct_state_access detected, enabling DSA.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Iris" timestamp="1786985872470" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Shaders are disabled because no valid shaderpack is selected]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Iris" timestamp="1786985873321" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Hardware information:]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Iris" timestamp="1786985873322" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[CPU: 8x Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Iris" timestamp="1786985873323" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[GPU: GeForce GT 640/PCIe/SSE2 (Supports OpenGL 3.2.0 NVIDIA 456.71)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Iris" timestamp="1786985873323" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[OS: Windows 10 (10.0)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_3304" timestamp="1786985874301" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Reloading ResourceManager: vanilla, fabric (ad_astra, alternate-current, appleskin, aquamirae, bclib, betteradvancements, brutalbosses, c2me, caffeineconfig, cardinal-components, cardinal-components-base, cardinal-components-block, cardinal-components-chunk, cardinal-components-entity, cardinal-components-item, cardinal-components-level, cardinal-components-scoreboard, cardinal-components-world, carryon, chisel, chunksending, cloth-config, clumps, connectivity, continuity, controlling, create, create_enchantment_industry, create_new_age, createaddition, creategoggles, cryonicconfig, cullleaves, debugify, decorative_blocks, deepslatecutting, diggusmaximus, dripstone_fluid_lib, dynamic_fps, easyanvils, easymagic, entityculling, expandeddelight, extendedgears, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-containers-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-events-lifecycle-v0, fabric-game-rule-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-language-kotlin, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-tables-v1, fabric-message-api-v1, fabric-mining-level-api-v1, fabric-model-loading-api-v1, fabric-models-v0, fabric-networking-api-v1, fabric-networking-v0, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-renderer-registries-v1, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v0, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, fallingleaves, farmersdelight, fish_n_ships, flywheel, forgeconfigapiport, geckolib, handcrafted, immediatelyfast, indium, inventorysorter, iris, jankson, krypton, kyrptconfig, lazydfu, libgui, lithium, lmft, midnightlib, milk, miningspeedtooltips, mm, modmenu, mr_dungeons_andtaverns, obscure_api, omega-config, openpartiesandclaims, patchouli, porting_lib_accessors, porting_lib_attributes, porting_lib_base, porting_lib_brewing, porting_lib_client_events, porting_lib_common, porting_lib_config, porting_lib_core, porting_lib_data, porting_lib_entity, porting_lib_extensions, porting_lib_fluids, porting_lib_gametest, porting_lib_lazy_registration, porting_lib_loot, porting_lib_mixin_extensions, porting_lib_model_generators, porting_lib_model_loader, porting_lib_model_materials, porting_lib_models, porting_lib_networking, porting_lib_obj_loader, porting_lib_recipe_book_categories, porting_lib_registries, porting_lib_tags, porting_lib_tool_actions, porting_lib_transfer, porting_lib_utility, railways, rare-ice, reach-entity-attributes, reeses-sodium-options, registrate-fabric, roughlyenoughitems, searchables, sliceanddice, smoke_suppression, smoothchunk, sodium, sodium-extra, spark, starlight, structureessentials, team_reborn_energy, txnilib, usefulbackpacks, uteamcore, wthit, yet_another_config_lib_v3, yigd, yjas, zoomify)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_391" timestamp="1786985874576" level="INFO" thread="Worker-Main-6">
+    <log4j:Message><![CDATA[Found unifont_all_no_pua-15.0.06.hex, loading]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_8066" timestamp="1786985875206" level="WARN" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Unable to find texture creategoggles:textures/trims/models/armor/goggle.png]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_8066" timestamp="1786985875206" level="WARN" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Unable to find texture creategoggles:textures/trims/models/armor/goggle_leggings.png]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Iris" timestamp="1786985876026" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Creating pipeline for dimension minecraft:overworld]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.cupboard.Cupboard" timestamp="1786985877687" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded config for: brutalbosses.json]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.cupboard.Cupboard" timestamp="1786985877728" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded config for: connectivity.json]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.cupboard.Cupboard" timestamp="1786985877738" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded config for: betterchunkloading.json]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.cupboard.Cupboard" timestamp="1786985877739" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded config for: smoothchunk.json]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_1088" timestamp="1786985897028" level="WARN" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Unable to load model: 'decorative_blocks:blockstate_copy_item#inventory' referenced from: decorative_blocks:blockstate_copy_item#inventory: java.io.FileNotFoundException: decorative_blocks:models/item/blockstate_copy_item.json]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_1092" timestamp="1786985905409" level="WARN" thread="Worker-Main-1">
+    <log4j:Message><![CDATA[Missing textures in model createaddition:small_light_connector#facing=west,mode=push,powered=true,rotation=x_clockwise_180,variant=default:
+    minecraft:textures/atlas/blocks.png:create:block/chute_block]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_1140" timestamp="1786985906126" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Missing sound for event: minecraft:item.goat_horn.play]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_1140" timestamp="1786985906126" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Missing sound for event: minecraft:entity.goat.screaming.horn_break]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_4225" timestamp="1786985906203" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[OpenAL initialized on device OpenAL Soft on Alto-falantes (High Definition Audio Device)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_1140" timestamp="1786985906205" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Sound engine started]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_1059" timestamp="1786985906547" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 4096x4096x4 minecraft:textures/atlas/blocks.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_1059" timestamp="1786985906830" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 512x256x4 minecraft:textures/atlas/signs.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_1059" timestamp="1786985906875" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_1059" timestamp="1786985906876" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_1059" timestamp="1786985906878" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_1059" timestamp="1786985906883" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_1059" timestamp="1786985906893" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_1059" timestamp="1786985906894" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraft.class_1059" timestamp="1786985906894" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_5944" timestamp="1786985908055" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_1059" timestamp="1786985908259" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 2048x1024x0 minecraft:textures/atlas/particles.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_1059" timestamp="1786985908267" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 512x512x0 minecraft:textures/atlas/paintings.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_1059" timestamp="1786985908273" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="YIGD" timestamp="1786985908275" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Reloading grave model (client)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="YIGD" timestamp="1786985908283" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Grave model and shape reload successful (client)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.jozufozu.flywheel.backend.Backend" timestamp="1786985908601" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded all shader sources.]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="patchouli" timestamp="1786985908608" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[BookContentResourceListenerLoader preloaded 171 jsons]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="YetAnotherConfigLib" timestamp="1786985910264" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Successfully loaded image 'zoomify:textures/demo/third-person-hud.webp']]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="YetAnotherConfigLib" timestamp="1786985910268" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Successfully loaded image 'zoomify:textures/demo/third-person-view.webp']]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="YetAnotherConfigLib" timestamp="1786985910272" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Successfully loaded image 'zoomify:textures/demo/zoom-hand.webp']]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="YetAnotherConfigLib" timestamp="1786985910276" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Successfully loaded image 'zoomify:textures/demo/zoom-world.webp']]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985914832" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[[worlds_together] Tried to read from global registry!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985914841" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[[worlds_together] Tried to read from global registry!]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985914841" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[[worlds_together] No valid registry found!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985914888" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[[worlds_together] Unable to parse Version in jar:file:///D:/CURSEFORGE/Instances/Create%20Optimized%20%5BFABRIC%5D/mods/creategoggles-1.20.1-0.5.5.g-%5BFABRIC%5D.jar]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985914899" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[[worlds_together] Unable to parse Version in jar:file:///D:/CURSEFORGE/Instances/Create%20Optimized%20%5BFABRIC%5D/mods/dungeons-and-taverns-3.0.3.f%5BFabric%5D.jar]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985915059" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[DataFixerAPI] Ignoring Patch{bclib:3.0.11:12582923}]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985915059" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Running Pre Patchers on D:\CURSEFORGE\Instances\Create Optimized [FABRIC]\saves\CriolinhoSurvivor\.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985915069" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[DataFixerAPI] Everything up to date]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916454" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Updating Pickers for BCLib - The End  BiomeSource (16100cd0)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916472" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Unable to build Biome List yet]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916482" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] No Void Biomes found. Disabling by using barrens]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916482" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] No Barrens Biomes found. Disabling by using land Biomes]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916482" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] No Center Island Biomes found. Forcing use of vanilla center.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916513" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Updating Pickers for BCLib - Nether BiomeSource (79d4046b)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916513" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Unable to build Biome List yet]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916673" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Updating Pickers for BCLib - The End  BiomeSource (22661af4)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916674" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Unable to build Biome List yet]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916674" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] No Void Biomes found. Disabling by using barrens]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916674" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] No Barrens Biomes found. Disabling by using land Biomes]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916674" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] No Center Island Biomes found. Forcing use of vanilla center.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916677" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Updating Pickers for BCLib - Nether BiomeSource (2805c358)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916677" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Unable to build Biome List yet]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916678" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Updating Pickers for BCLib - The End  BiomeSource (404fda32)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916679" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Unable to build Biome List yet]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916679" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] No Void Biomes found. Disabling by using barrens]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916681" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] No Barrens Biomes found. Disabling by using land Biomes]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916681" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] No Center Island Biomes found. Forcing use of vanilla center.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916685" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Updating Pickers for BCLib - Nether BiomeSource (231c7eda)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916685" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Unable to build Biome List yet]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916687" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Updating Pickers for BCLib - The End  BiomeSource (4a7347e)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916687" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Unable to build Biome List yet]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916687" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] No Void Biomes found. Disabling by using barrens]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916688" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] No Barrens Biomes found. Disabling by using land Biomes]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916688" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] No Center Island Biomes found. Forcing use of vanilla center.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916689" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Updating Pickers for BCLib - Nether BiomeSource (dbe47bd)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985916689" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Unable to build Biome List yet]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985917285" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] No valid BCLBiome Registry available!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985917286" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] No valid Biome Registry available!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="FabricRegistrySync" timestamp="1786985917413" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[fabric-registry-sync] Loaded registry data [file 1/4]]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985917441" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Updating Pickers for BCLib - The End  BiomeSource (62519c68)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985917441" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Unable to build Biome List yet]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985917441" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] No Void Biomes found. Disabling by using barrens]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985917442" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] No Barrens Biomes found. Disabling by using land Biomes]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985917442" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] No Center Island Biomes found. Forcing use of vanilla center.]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985917443" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Updating Pickers for BCLib - Nether BiomeSource (5af00035)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985917444" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Unable to build Biome List yet]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="io.wispforest.lmft.LMFTCommon" timestamp="1786985918814" level="INFO" thread="Worker-Main-6">
+    <log4j:Message><![CDATA[[Load My F***ing Tags]: Loaded Config File!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="io.wispforest.lmft.LMFTCommon" timestamp="1786985919077" level="WARN" thread="Worker-Main-7">
+    <log4j:Message><![CDATA[[Load My F***ing Tags]: Couldn't load certain entries within the tag creategoggles:modifier/goggle_incompatible: mekanism:mekasuit_helmet (from fabric)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="io.wispforest.lmft.LMFTCommon" timestamp="1786985919095" level="WARN" thread="Worker-Main-7">
+    <log4j:Message><![CDATA[[Load My F***ing Tags]: Couldn't load certain entries within the tag minecraft:trim_materialss: creategoggles:goggle_material (from fabric)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="io.wispforest.lmft.LMFTCommon" timestamp="1786985919107" level="WARN" thread="Worker-Main-5">
+    <log4j:Message><![CDATA[[Load My F***ing Tags]: Couldn't load certain entries within the tag c:mycelium: #c:nether_mycelium (from fabric)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="io.wispforest.lmft.LMFTCommon" timestamp="1786985919108" level="WARN" thread="Worker-Main-5">
+    <log4j:Message><![CDATA[[Load My F***ing Tags]: Couldn't load certain entries within the tag c:nether_terrain: #c:nether_mycelium (from fabric)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="io.wispforest.lmft.LMFTCommon" timestamp="1786985919128" level="WARN" thread="Worker-Main-5">
+    <log4j:Message><![CDATA[[Load My F***ing Tags]: Couldn't load certain entries within the tag c:workstation/fisherman: #c:barrel (from fabric)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="io.wispforest.lmft.LMFTCommon" timestamp="1786985919133" level="WARN" thread="Worker-Main-5">
+    <log4j:Message><![CDATA[[Load My F***ing Tags]: Couldn't load certain entries within the tag minecraft:mineable/axe: #c:wooden_composter (from fabric), #c:workbench (from fabric)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985920552" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Disabling Recipe: bclib:test_star]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985920611" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/exposed_cut_copper recipe (createaddition:charging/exposed_cut_copper) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985920611" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/cut_copper_block recipe (createaddition:charging/cut_copper_block) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985920616" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:rolling/electrum_ingot recipe (createaddition:rolling/electrum_ingot) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985920632" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/exposed_cut_copper_slab recipe (createaddition:charging/exposed_cut_copper_slab) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985920650" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/channeling recipe (createaddition:charging/channeling) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985920657" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/weathered_copper_shingles recipe (createaddition:charging/weathered_copper_shingles) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985920666" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/weathered_copper_shingle_stairs recipe (createaddition:charging/weathered_copper_shingle_stairs) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985920671" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/cut_copper_slab recipe (createaddition:charging/cut_copper_slab) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985920678" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/weathered_cut_copper_stairs recipe (createaddition:charging/weathered_cut_copper_stairs) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985920681" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/exposed_copper recipe (createaddition:charging/exposed_copper) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_1863" timestamp="1786985920686" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[Parsing error loading recipe createaddition:compat/immersiveengineering/item_application/leaded_concrete]]></log4j:Message>
+    <log4j:Throwable><![CDATA[com.google.gson.JsonSyntaxException: Unknown item 'immersiveengineering:concrete'
+	at net.minecraft.class_1869.method_17878(class_1869.java:272)
+	at java.base/java.util.Optional.orElseThrow(Unknown Source)
+	at net.minecraft.class_1869.method_8155(class_1869.java:272)
+	at net.minecraft.class_1856.method_8107(class_1856.java:160)
+	at net.minecraft.class_1856.method_8102(class_1856.java:143)
+	at net.minecraft.class_1856.method_52177(class_1856.java:135)
+	at com.simibubi.create.content.processing.recipe.ProcessingRecipeSerializer.readFromJson(ProcessingRecipeSerializer.java:66)
+	at com.simibubi.create.content.processing.recipe.ProcessingRecipeSerializer.fromJson(ProcessingRecipeSerializer.java:154)
+	at com.simibubi.create.content.processing.recipe.ProcessingRecipeSerializer.method_8121(ProcessingRecipeSerializer.java:21)
+	at net.minecraft.class_1863.method_17720(class_1863.java:135)
+	at net.minecraft.class_1863.method_20705(class_1863.java:56)
+	at net.minecraft.class_1863.method_18788(class_1863.java:35)
+	at net.minecraft.class_4080.method_18790(class_4080.java:13)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(Unknown Source)
+	at net.minecraft.class_4014.method_18365(class_4014.java:69)
+	at net.minecraft.class_1255.method_18859(class_1255.java:156)
+	at net.minecraft.class_4093.method_18859(class_4093.java:23)
+	at net.minecraft.class_1255.method_16075(class_1255.java:130)
+	at net.minecraft.class_1255.method_18857(class_1255.java:139)
+	at net.minecraft.class_7196.method_45694(class_7196.java:188)
+	at net.minecraft.class_7196.method_41891(class_7196.java:123)
+	at net.minecraft.class_7196.method_41899(class_7196.java:202)
+	at net.minecraft.class_7196.method_41894(class_7196.java:64)
+	at net.minecraft.class_528$class_4272.method_20174(class_528.java:590)
+	at net.minecraft.class_528$class_4272.method_20164(class_528.java:480)
+	at net.minecraft.class_528$class_4272.method_25402(class_528.java:402)
+	at net.minecraft.class_350.method_25402(class_350.java:327)
+	at net.minecraft.class_4069.method_25402(class_4069.java:38)
+	at net.minecraft.class_312.method_1611(class_312.java:98)
+	at net.minecraft.class_437.method_25412(class_437.java:409)
+	at net.minecraft.class_312.method_1601(class_312.java:98)
+	at net.minecraft.class_312.method_22686(class_312.java:169)
+	at net.minecraft.class_1255.execute(class_1255.java:102)
+	at net.minecraft.class_312.method_22684(class_312.java:169)
+	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43)
+	at org.lwjgl.system.JNI.invokeV(Native Method)
+	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474)
+	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:237)
+	at net.minecraft.class_310.method_1523(class_310.java:1244)
+	at net.minecraft.class_310.method_1514(class_310.java:802)
+	at net.minecraft.client.main.Main.main(Main.java:250)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+]]></log4j:Throwable>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921001" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/exposed_cut_copper_stairs recipe (createaddition:charging/exposed_cut_copper_stairs) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_1863" timestamp="1786985921006" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[Parsing error loading recipe createaddition:compat/immersiveengineering/item_application/reinforced_blast_brick]]></log4j:Message>
+    <log4j:Throwable><![CDATA[com.google.gson.JsonSyntaxException: Unknown item 'immersiveengineering:blastbrick'
+	at net.minecraft.class_1869.method_17878(class_1869.java:272)
+	at java.base/java.util.Optional.orElseThrow(Unknown Source)
+	at net.minecraft.class_1869.method_8155(class_1869.java:272)
+	at net.minecraft.class_1856.method_8107(class_1856.java:160)
+	at net.minecraft.class_1856.method_8102(class_1856.java:143)
+	at net.minecraft.class_1856.method_52177(class_1856.java:135)
+	at com.simibubi.create.content.processing.recipe.ProcessingRecipeSerializer.readFromJson(ProcessingRecipeSerializer.java:66)
+	at com.simibubi.create.content.processing.recipe.ProcessingRecipeSerializer.fromJson(ProcessingRecipeSerializer.java:154)
+	at com.simibubi.create.content.processing.recipe.ProcessingRecipeSerializer.method_8121(ProcessingRecipeSerializer.java:21)
+	at net.minecraft.class_1863.method_17720(class_1863.java:135)
+	at net.minecraft.class_1863.method_20705(class_1863.java:56)
+	at net.minecraft.class_1863.method_18788(class_1863.java:35)
+	at net.minecraft.class_4080.method_18790(class_4080.java:13)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(Unknown Source)
+	at net.minecraft.class_4014.method_18365(class_4014.java:69)
+	at net.minecraft.class_1255.method_18859(class_1255.java:156)
+	at net.minecraft.class_4093.method_18859(class_4093.java:23)
+	at net.minecraft.class_1255.method_16075(class_1255.java:130)
+	at net.minecraft.class_1255.method_18857(class_1255.java:139)
+	at net.minecraft.class_7196.method_45694(class_7196.java:188)
+	at net.minecraft.class_7196.method_41891(class_7196.java:123)
+	at net.minecraft.class_7196.method_41899(class_7196.java:202)
+	at net.minecraft.class_7196.method_41894(class_7196.java:64)
+	at net.minecraft.class_528$class_4272.method_20174(class_528.java:590)
+	at net.minecraft.class_528$class_4272.method_20164(class_528.java:480)
+	at net.minecraft.class_528$class_4272.method_25402(class_528.java:402)
+	at net.minecraft.class_350.method_25402(class_350.java:327)
+	at net.minecraft.class_4069.method_25402(class_4069.java:38)
+	at net.minecraft.class_312.method_1611(class_312.java:98)
+	at net.minecraft.class_437.method_25412(class_437.java:409)
+	at net.minecraft.class_312.method_1601(class_312.java:98)
+	at net.minecraft.class_312.method_22686(class_312.java:169)
+	at net.minecraft.class_1255.execute(class_1255.java:102)
+	at net.minecraft.class_312.method_22684(class_312.java:169)
+	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43)
+	at org.lwjgl.system.JNI.invokeV(Native Method)
+	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474)
+	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:237)
+	at net.minecraft.class_310.method_1523(class_310.java:1244)
+	at net.minecraft.class_310.method_1514(class_310.java:802)
+	at net.minecraft.client.main.Main.main(Main.java:250)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+]]></log4j:Throwable>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921012" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:rolling/brass_ingot recipe (createaddition:rolling/brass_ingot) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921013" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/copper_shingle_stairs recipe (createaddition:charging/copper_shingle_stairs) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921016" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:rolling/electrum_plate recipe (createaddition:rolling/electrum_plate) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921039" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/exposed_copper_shingles recipe (createaddition:charging/exposed_copper_shingles) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921045" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/weathered_cut_copper recipe (createaddition:charging/weathered_cut_copper) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921060" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:rolling/iron_ingot recipe (createaddition:rolling/iron_ingot) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921061" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/cut_copper_stairs recipe (createaddition:charging/cut_copper_stairs) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921062" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/copper_shingles recipe (createaddition:charging/copper_shingles) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921064" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/copper_block recipe (createaddition:charging/copper_block) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921069" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/copper_shingle_slab recipe (createaddition:charging/copper_shingle_slab) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921071" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:rolling/copper_ingot recipe (createaddition:rolling/copper_ingot) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921072" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/weathered_cut_copper_slab recipe (createaddition:charging/weathered_cut_copper_slab) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921075" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:rolling/copper_plate recipe (createaddition:rolling/copper_plate) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921089" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:rolling/iron_plate recipe (createaddition:rolling/iron_plate) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921099" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/weathered_copper_shingle_slab recipe (createaddition:charging/weathered_copper_shingle_slab) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921136" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:rolling/gold_ingot recipe (createaddition:rolling/gold_ingot) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921137" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/exposed_copper_shingle_slab recipe (createaddition:charging/exposed_copper_shingle_slab) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921138" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:rolling/straw recipe (createaddition:rolling/straw) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921144" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:rolling/gold_plate recipe (createaddition:rolling/gold_plate) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921148" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/weathered_copper recipe (createaddition:charging/weathered_copper) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.simibubi.create.Create" timestamp="1786985921154" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Your custom createaddition:charging/exposed_copper_shingle_stairs recipe (createaddition:charging/exposed_copper_shingle_stairs) specified a duration. Durations have no impact on this type of recipe.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_1863" timestamp="1786985921161" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded 37 recipes]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.possible_triangle.sliceanddice.SliceAndDice" timestamp="1786985921168" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Injecting recipes]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.class_163" timestamp="1786985921493" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded 4275 advancements]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="brutalbosses" timestamp="1786985921599" level="ERROR" thread="Render thread">
+    <log4j:Message><![CDATA[Bad attribute id:minecraft:generic.jump_strength in:brutalbosses:rabbitboss]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="brutalbosses" timestamp="1786985921601" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:drowned]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="brutalbosses" timestamp="1786985921601" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:iron_golem]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="brutalbosses" timestamp="1786985921602" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:snow_golem]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="brutalbosses" timestamp="1786985921602" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:zombie]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="brutalbosses" timestamp="1786985921602" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:skeleton]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="brutalbosses" timestamp="1786985921602" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:pillager]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="brutalbosses" timestamp="1786985921603" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:vex]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="brutalbosses" timestamp="1786985921603" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:evoker]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="brutalbosses" timestamp="1786985921603" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:zombie]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="brutalbosses" timestamp="1786985921604" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:vindicator]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="brutalbosses" timestamp="1786985921604" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:wither_skeleton]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="brutalbosses" timestamp="1786985921604" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:wither_skeleton]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="brutalbosses" timestamp="1786985921604" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:cave_spider]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="brutalbosses" timestamp="1786985921604" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:zombie]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="brutalbosses" timestamp="1786985921605" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:husk]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="brutalbosses" timestamp="1786985921605" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:evoker]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="brutalbosses" timestamp="1786985921605" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:wandering_trader]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="brutalbosses" timestamp="1786985921605" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:guardian]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="brutalbosses" timestamp="1786985921605" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:vindicator]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="brutalbosses" timestamp="1786985921605" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:shulker]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="brutalbosses" timestamp="1786985921605" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:zoglin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="brutalbosses" timestamp="1786985921606" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:chicken]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="brutalbosses" timestamp="1786985921606" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:blaze]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="brutalbosses" timestamp="1786985921606" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:witch]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="brutalbosses" timestamp="1786985921606" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:phantom]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="brutalbosses" timestamp="1786985921606" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:mooshroom]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="brutalbosses" timestamp="1786985921606" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:rabbit]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="brutalbosses" timestamp="1786985921606" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:piglin_brute]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="brutalbosses" timestamp="1786985921606" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:ghast]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="brutalbosses" timestamp="1786985921606" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded boss variant for: minecraft:stray]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="YIGD" timestamp="1786985921772" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Reloading grave shape (server)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="YIGD" timestamp="1786985921773" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Grave model and shape reload successful (server)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="YIGD" timestamp="1786985921773" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Reloading YIGD graveyard data (server)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="YIGD" timestamp="1786985921780" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Graveyard data successfully reloaded (server)]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="YIGD" timestamp="1786985921780" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Reloading YIGD grave area overrides (server)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="YIGD" timestamp="1786985921785" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Grave area overrides successfully reloaded (server)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985926485" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Updating Pickers for BCLib - The End  BiomeSource (5dec4634)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985926491" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Updating Pickers for BCLib - Nether BiomeSource (6329e961)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985926504" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Enforcing Correct Generator for minecraft:the_end.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985926504" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Updating Pickers for BCLib - The End  BiomeSource (5dec4634)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985926506" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Enforcing Correct Generator for minecraft:the_nether.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985926506" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[bclib] Updating Pickers for BCLib - Nether BiomeSource (6329e961)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="org.betterx.worlds.together.util.Logger" timestamp="1786985926509" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[worlds_together] Loading originally configured Dimensions in World.]]></log4j:Message>
+  </log4j:Event>
+
